@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="űrlap.css">
+</head>
+
+<body>
+    <header> <!---->
+        <nav>
+            <ul>
+                <li class="header-szöveg"><a href="index.html">Főoldal</a></li> <!--header menü-->
+                <li class="dropdown">
+                    <a href="#">Információk</a>
+                    <ul class="dropdown-content">
+                        <li><a href="animation.html">Animáció</a></li>
+                        <li><a href="űrlap.html">Űrlap</a></li>
+                        <li><a href="table.html">táblázat</a></li>
+                        <li><a href="gallery.html">Galéria</a></li>
+                        <li><a href="#">Média</a></li>
+                    </ul>
+                </li>
+                <li class="header-szöveg"><a href="impreszum.html">Impreszum</a></li>
+            </ul>
+        </nav>
+        <a href="login.html"><img src="login.jpg" alt="Logo" class="header-image"></a>
+    </header>
+    <br><br><br><br>
+    <article>
+        <form action="">
+            <p><span id="kötelző">Gellérthegyi túra jelentkezés</span></p>
+            <fieldset>
+                <legend>Túrázó adatai</legend>
+                <!-- for ba az id neve kell hogy ha rakatitunk odxa dobon a text-be!!!!-->
+                <p>
+                    <label for="nev">Név: <input type="text" name="nev" id="nev" placeholder="név megadása..." size="17"
+                            required></label><span class="red">*</span>
+                </p>
+                <p>
+                    <label for="telefon">Telefon: <input type="tel" name="Telefon" id="Telefon"
+                            placeholder="telefon szám megadásas..." size="17" required></label><span class="red">*</span>
+                </p>
+                <p>
+                    <label for="email">Email Cím <input type="email" name="email" id="email"
+                            placeholder="add meg az email cimed..." size="17"></label><span class="red">*</span>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>A túra mérete</legend>
+                <p><label for=""><input type="radio" name="meret" value="kicsi" checked>fél út (60perc)</label></p>
+                <p><label for=""><input type="radio" name="meret" value="nagy">teljes út(120oerc)</label></p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Extrák</legend>
+                <p><label for=""><input type="checkbox" name="feltet1" value="sonka" checked>helyszínre szállítás</label>
+                                    <small>(plusz 30.000ft)</small>
+                </p>
+                <p><label for=""><input type="checkbox" name="feltet2" value="sajt">Felszerelés</label>
+                                    <small>(plusz 14.000ft)</small>
+                </p>
+                <p><label for=""><input type="checkbox" name="feltet3" value="gomba">Túravezető</label>
+                                    <small>(plusz 20.000ft)</small>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Időpont és személyek száma</legend>
+            <p><label for="">Személyek száma <input type="number" name="Mennyiség"></label></p>
+            <p><label for="">Láttogatás időpontja <input type="date" name="kiszallítas"></label></p>
+            <button type="reset">alaphelyzet</button>
+            <button type="submit">elküldés</button>
+            </fieldset>
+        </form>
+    </article>
+    <br><br><br>
+    <footer>
+        <div>
+            <h2>&#169;2025/26 Kecskés Gellért All rights reserved</h2>
+        </div>
+    </footer>
+</body>
+
+</html>

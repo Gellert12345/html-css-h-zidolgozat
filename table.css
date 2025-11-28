@@ -1,0 +1,51 @@
+table,
+th,
+td
+
+/* felsorlonal hogy egyszere többre legyen értelme utlosóhoz nme kell vessző!!!*/
+    {
+    border: 1px solid black;
+    padding: 5px 10px;
+    /* kikapcsolni a extra sort tábálázatba*/
+}
+
+th {
+    color: white;
+    text-align: center;
+}
+
+
+/* 2 hányadik elemet(sort) szólítson meg?*/
+table td {
+    color: white;
+}
+
+table tr:hover {
+    color: white;
+}
+
+.table-container {
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    color: white;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.005);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+}
+
+table {
+    border-collapse: collapse;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+

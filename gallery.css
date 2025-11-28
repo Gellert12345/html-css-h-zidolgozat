@@ -1,0 +1,48 @@
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    align-items: flex-start;
+}
+.gallery-container img {
+    width: 180px;
+    border: 1px solid #bbb;
+    transition: opacity 300ms ease-in-out;   /* átklátszót ejelent az aopacity-i */
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    height: 95px;
+}
+.gallery-container img:hover {
+    border: 1px solid black;
+    opacity: 1.0;   /* vissza rakja az eredeti stilusra 1.0 az 100% vagyis normal *//*  */
+}
+.gallery-container figure {
+    width: 180px;
+    text-align: center;
+    margin: 25px;
+}
+a img{
+    padding: 3px;
+    display: flex;
+}
+figcaption {
+    display: block;
+    font-style: italic; /* dölt betű */
+    font-size: 0.9em; /* realativ méret a szülőhoz igazodik */
+}
+article {
+    color: white;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.005);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    width: 800px;
+    text-align: center;
+    overflow: hidden;
+    margin: 20px auto;
+    /* minden középen*/   
+}
